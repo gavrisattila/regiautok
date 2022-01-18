@@ -1,0 +1,157 @@
+main,nav,footer,article,aside{
+
+        border: 1px solid black;
+    
+    }
+    
+    main{
+    
+        grid-template-areas: "he he he"
+        "na na na"
+        "ar ar as"
+        "fo fo fo";
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    
+    img{
+    
+        border: 1px solid black;
+        max-width: 100%;
+    
+    }
+    table{
+        margin: 10px;
+        width: 100%;
+        height: auto;
+        padding-right: 30px;
+    }
+    
+    th{
+        border-bottom: 3px solid black;
+    }
+
+    tr, td {
+    
+        height: auto;
+        border-bottom: 1px solid black;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    tr :nth-child(even){
+        background-color: rgb(172, 172, 147);
+    }
+    
+    h1{
+    
+        color: rgb(21, 99, 14);
+    
+    }
+    
+    h2{
+    
+        border:1px solid black;
+    
+    }
+    
+    div{
+    
+        border: 1px solid black;
+    
+    }
+    
+    footer p{
+    
+        text-align: center;
+    
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(139, 148, 138);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    nav li {
+
+
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    /* Change the link color to #111 (black) on hover */
+        li a:hover {
+        background-color: #111;
+    }
+    
+    header{
+    
+        grid-area: he;
+    
+    }
+    
+    nav{
+    
+        grid-area: na;
+    
+    }
+    
+    .tarolo{
+    
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    
+    }
+    
+    article{
+    
+        grid-area: ar;
+    
+    }
+    
+    aside{
+    
+        grid-area: as;
+    
+    }
+    
+    footer{
+    
+        grid-area: fo;
+        color: rgb(21, 99, 14);
+    
+    }
+
+    @media screen and (max-width: 600px) {
+        main{
+    
+            grid-template-areas: 
+            "he"
+            "na"
+            "ar"
+            "as"
+            "fo";
+
+            grid-template-columns: 1fr;
+        
+        }
+        
+        .tarolo{
+
+            grid-template-columns: 1fr;
+        }
+        nav ul{
+            grid-template-columns: 1fr;
+        }
+    }
